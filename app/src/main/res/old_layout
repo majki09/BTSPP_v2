@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_world" />
+
+    <Button
+        android:id="@+id/buttonSendRtc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="106dp"
+        android:text="Send rtc" />
+
+    <Button
+        android:id="@+id/buttonPwm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="39dp"
+        android:text="PWM" />
+
+    <Button
+        android:id="@+id/buttonSendText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send"
+        android:layout_alignBottom="@+id/editText1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/editText1"
+        android:layout_toRightOf="@+id/seekBarRed"
+        android:layout_toEndOf="@+id/seekBarRed" />
+
+    <Button
+        android:id="@+id/buttonOnf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonSendRtc"
+        android:layout_centerHorizontal="true"
+        android:text="Send onf" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_alignParentLeft="true"
+        android:layout_toStartOf="@+id/buttonSendText"
+        android:layout_toLeftOf="@+id/buttonSendText"
+        android:ems="10">
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextIRSeconds"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/textView1"
+        android:layout_alignEnd="@+id/textView1" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SET IR TIME"
+        android:id="@+id/buttonSetIRTime"
+        android:layout_alignTop="@+id/editTextIRSeconds"
+        android:layout_toRightOf="@+id/editTextIRSeconds"
+        android:layout_toEndOf="@+id/editTextIRSeconds" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="read all"
+        android:id="@+id/buttonReadAll"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/buttonSetIRTime"
+        android:layout_alignParentLeft="true" />
+
+    <SeekBar
+        android:id="@+id/seekBarRed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonSendText"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_toStartOf="@+id/editTextRed"
+        android:layout_toLeftOf="@+id/editTextRed"
+        android:indeterminate="false"
+        android:progress="46" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextRed"
+        android:layout_alignTop="@+id/seekBarRed"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:width="60dp" />
+
+</RelativeLayout>

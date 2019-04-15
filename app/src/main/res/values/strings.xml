@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">BTSPP_v2</string>
+    <string name="hello_world">Lista komend UART:
+
+        rtc	- pokaż bieżącą datę i czas
+        lgt	- pokaz wynik pomiaru swiatla
+        aua	- autoadaptacja natężenia światła
+        tim	- ustaw czas. FORMAT: timGGMM
+        dat	- ustaw date. FORMAT: datDDMM
+        ton	- ustaw czas załączenia
+        tof	- ustaw czas wyłączenia
+        pwm	- ustaw PWM. FORMAT: pwmNXXXX
+        pwmN1327	- zmniejsz N-kanał o 100
+        pwmN1569	- zwiększ N-kanał o 100
+        red - ustaw kolor RGB czerwony
+        gre - ustaw kolor RGB zielony
+        blu - ustaw kolor RGB niebieski
+        whi - ustaw kolor RGB biały
+        yel	- ustaw kolor RGB żółty
+        bri	- ustaw jasnosc (1-99)
+        br+	- rozjasnij wszystkie PWMy
+        br-	- sciemnij wszystkie PWMy
+btu	- ustaw tempo rozjaśniania (1-64)
+//btd	- ustaw tempo ściemniania (1-10)
+btr	- reset tempa rozjasniania i ściemniania
+irt	- ustawianie czasu wyłączenia po włączeniu przez czujkę IR [s]
+ply0	- wyłącz płynność regulacji PWM
+ply1	- włącz płynność regulacji PWM
+onf	- wł/wył oświetlenia
+sta	- pokaż status: PWM1,PWM2,PWM3,jasnosc,status
+deb	- wł/wył trybu DEBUG (drukowanie wartości)
+res	- RESET</string>
+</resources>
